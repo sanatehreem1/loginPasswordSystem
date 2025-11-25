@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guardian Profiles - Lady Francist School</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/logo.png"
+            alt="Logo"
+            width="34"
+            height="34"
+            class="d-inline-block align-text-top"
+          />
+          Lady Francis School
+        </a>
+        <a class="navbar-brand">Teacher Profiles</a>
+        <a class="navbar-brand">Guardian Profiles</a>
+        <a class="navbar-brand">Update Student Info</a>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+    <main>
+      <!-- Guardian -->
+      <div id="guardian">
+        <!-- Guardian Name and Verification Status -->
+        <div id="guardian__name-verification">
+          <h1 id="guardian__name">Jane Doe</h1>
+          <span id="guardian__verification"
+            >verification status: <span>verified</span></span
+          >
+        </div>
+        <!-- Guardian Details -->
+        <div id="guardian__details">
+          <span id="guardian__email">email: janedoe@gmail.com</span>
+          <span id="guardian__phone">phone: 07124456789</span>
+          <span id="guardian__address">address: 64 High Street, London</span>
+        </div>
+      </div>
+      <!-- Children & Actions -->
+      <div id="children-actions">
+        <!-- Children -->
+        <div id="children">
+          <h2>Children</h2>
+          <div id="children__child">
+            <span id="children__details"
+              >Robert Doe - Year 3 - Maple Class</span
+            >
+            <button>view student profile</button>
+          </div>
+        </div>
+        <!-- Actions -->
+        <div id="actions">
+          <h2>Actions</h2>
+          <div id="actions__button-group">
+            <button>edit guardian details</button>
+            <button>edit children details</button>
+            <button>reset user password</button>
+            <button>lock account</button>
+            <button>delete profile</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
