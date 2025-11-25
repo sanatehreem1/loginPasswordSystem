@@ -32,6 +32,34 @@ button:hover {
   border-color: hsla(200, 100%, 68%, 1);
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+#navbar__school-name {
+  font-size: 1.2rem;
+}
+
+.nav-item {
+  font-size: 0.8em;
+}
+
+#search__form {
+  display: flex;
+  align-items: center;
+}
+#search__input {
+  width: 6rem;
+  height: 2rem;
+  font-size: 0.8rem;
+}
+
+#search__button {
+  font-size: 0.8rem;
+  padding: 0.3rem;
+}
+
 /* Guardian */
 #guardian {
   display: flex;
@@ -63,7 +91,7 @@ button:hover {
 /* Children */
 #children__child {
   display: flex;
-align-items: center;
+  align-items: center;
   gap: 0.5rem;
 }
 
