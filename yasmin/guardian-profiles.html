@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guardian Profiles - Lady Francis School</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
@@ -41,44 +41,67 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Teacher Profiles</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Update Student Info</a>
-          </li>
         </ul>
 
-        <form class="d-flex" role="search" id="search__form">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-            id="search__input"
-          />
-          <button
-            class="btn btn-outline-success"
-            type="submit"
-            id="search__button"
-          >
-            Search
+        <div id="search-logout" class="d-flex">
+          <form class="d-flex" role="search" id="search__form">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              id="search__input"
+            />
+            <button
+              class="btn btn-outline-success"
+              type="submit"
+              id="search__button"
+            >
+              Search
+            </button>
+          </form>
+          <button id="logout__button">
+            <a href="/index.html">Logout</a>
           </button>
-        </form>
+        </div>
       </div>
     </header>
     <main>
-      <!-- Guardian -->
-      <div id="guardian">
-        <!-- Guardian Name and Verification Status -->
-        <div id="guardian__name-verification">
-          <h1 id="guardian__name">Jane Doe</h1>
-          <span id="guardian__verification"
-            >verification status: <span>verified</span></span
-          >
-        </div>
-        <!-- Guardian Details -->
-        <div id="guardian__details">
-          <span id="guardian__email">email: janedoe@gmail.com</span>
-          <span id="guardian__phone">phone: 07124456789</span>
-          <span id="guardian__address">address: 64 High Street, London</span>
+      <div>
+        <div class="card mb-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="/guardian.png"
+                class="img-fluid rounded-start"
+                alt="/guardian.png"
+              />
+            </div>
+            <div class="col-md-8">
+              <!-- Guardian -->
+              <div id="guardian" class="card-body">
+                <!-- Guardian Name and Verification Status -->
+                <div id="guardian__name-verification">
+                  <h1 class="card-title">Jane Doe</h1>
+                  <span id="guardian__verification"
+                    >verification status:
+                    <span>verified</span>
+                  </span>
+                </div>
+                <!-- Guardian Details -->
+                <div id="guardian__details">
+                  <span id="guardian__email">email: janedoe@gmail.com</span>
+                  <span id="guardian__phone">phone: 07124456789</span>
+                  <span id="guardian__address"
+                    >address: 64 High Street, London</span
+                  >
+                </div>
+                <div id="guardian__actions">
+                  <button id="guardian">Edit Guardian Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- Children & Actions -->
@@ -86,25 +109,27 @@
         <!-- Children -->
         <div id="children">
           <h2>Children</h2>
-          <div id="children__child">
-            <span id="children__details"
-              >Robert Doe - Year 3 - Maple Class</span
-            >
-            <button>view student profile</button>
-          </div>
-        </div>
-        <!-- Actions -->
-        <div id="actions">
-          <h2>Actions</h2>
-          <div id="actions__button-group">
-            <button>edit guardian details</button>
-            <button>edit children details</button>
-            <button>reset user password</button>
-            <button>lock account</button>
-            <button>delete profile</button>
+          <div class="card w-250 mb-3 children__child">
+            <div class="card-body children__child-body">
+              <div class="children__details">
+                <h5 class="card-title">Robert Doe</h5>
+                <p class="card-text">Year 3 - Maple Class</p>
+              </div>
+              <button href="" class="">View Student Info</button>
+            </div>
           </div>
         </div>
       </div>
     </main>
+    <!-- Actions -->
+    <div id="actions">
+      <h2>Actions</h2>
+      <div id="actions__button-group">
+        <button>Edit children details</button>
+        <button>Reset user password</button>
+        <button>Lock account</button>
+        <button>Delete profile</button>
+      </div>
+    </div>
   </body>
 </html>
