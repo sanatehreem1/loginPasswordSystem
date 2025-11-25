@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: hsla(200, 100%, 87%, 0.5) !important;
+}
+
+main {
+  display: flex;
+  justify-content: evenly;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  gap: 6rem;
+}
+
+main > div {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.4rem !important;
+  border-color: gray;
+  font-size: 0.8rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  height: fit-content;
+  line-height: 1rem;
+}
+
+button:hover {
+  background-color: hsla(200, 100%, 87%, 1);
+  border-color: hsla(200, 100%, 68%, 1);
+}
+
+/* Guardian */
+#guardian {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#guardian__name-verification {
+  display: flex;
+  flex-direction: column;
+}
+
+#guardian__verification span {
+  font-weight: bold;
+  color: green;
+}
+
+#guardian__details {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Children & Actions */
+#children-actions {
+  display: flex;
+  gap: 3rem;
+}
+
+/* Children */
+#children__child {
+  display: flex;
+align-items: center;
+  gap: 0.5rem;
+}
+
+#children__details {
+  display: flex;
+}
+/* Actions */
+
+#actions__button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: fit-content;
+}
