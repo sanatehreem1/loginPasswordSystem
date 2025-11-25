@@ -22,27 +22,45 @@
   <body>
     <header class="navbar bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="/logo.png"
-            alt="Logo"
-            width="34"
-            height="34"
-            class="d-inline-block align-text-top"
-          />
-          Lady Francis School
-        </a>
-        <a class="navbar-brand">Teacher Profiles</a>
-        <a href="/guardian-profiles" class="navbar-brand">Guardian Profiles</a>
-        <a class="navbar-brand">Update Student Info</a>
-        <form class="d-flex" role="search">
+        <ul class="nav nav-tabs">
+          <a class="navbar-brand" href="#" id="navbar__school-name">
+            <img
+              src="/logo.png"
+              alt="Logo"
+              width="34"
+              height="34"
+              class="d-inline-block align-text-top"
+            />
+            Lady Francis School
+          </a>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"
+              >Guardian Profiles</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Teacher Profiles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Update Student Info</a>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search" id="search__form">
           <input
             class="form-control me-2"
             type="search"
             placeholder="Search"
             aria-label="Search"
+            id="search__input"
           />
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button
+            class="btn btn-outline-success"
+            type="submit"
+            id="search__button"
+          >
+            Search
+          </button>
         </form>
       </div>
     </header>
