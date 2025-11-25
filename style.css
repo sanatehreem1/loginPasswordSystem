@@ -1,0 +1,160 @@
+/* Page layout  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff; 
+    color: #000000;            
+}
+
+/* Main area that holds the login card */
+.login-page {
+    min-height: calc(100vh - 160px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Login card  */
+.login-card {
+    background-color: #e9f1ff; /* light blue like your mock-up */
+    border-radius: 30px;
+    width: 100%;
+    max-width: 900px;
+    padding: 40px 60px 40px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* the tabs for the staff and guradient at the top */
+.login-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 10px;
+}
+
+.login-tab {
+    background: none;
+    border: none;
+    font-size: 1.35rem;
+    cursor: pointer;
+    padding-bottom: 6px;
+    color: #0a065b;  
+}
+
+/* the tabs active */
+.login-tab.active {
+    font-weight: 600;
+    color: #0026b3;
+}
+/* the bars being underline */
+.tab-underline-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 30px;
+}
+
+.tab-underline {
+    width: 140px;
+    height: 4px;
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.7); 
+}
+
+/* blue line for the secleted tab */
+.tab-underline.active {
+    background-color: #0026b3;
+}
+/* login form layout*/
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 16px 24px;
+    border-radius: 999px;        
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    font-size: 1.05rem;
+}
+
+.login-form input:focus {
+    box-shadow: 0 0 0 2px rgba(0, 38, 179, 0.3);
+}
+
+/* forget password option */
+.forgot-wrapper {
+    text-align: right;
+    margin-top: -8px;
+    margin-bottom: 8px;
+}
+
+.forgot-link {
+    color: #0026b3;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+/* button for login */
+.login-button {
+    margin: 10px auto 0;
+    width: 220px;
+    padding: 14px 0;
+    border-radius: 999px;
+    border: none;
+    background-color: #0026b3;  
+    color: #ffffff;            
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #001b7a;  
+}
+ /* sign up button */
+ .signup-wrapper {
+    margin-top: 16px;
+}
+
+.signup-link {
+    color: #0026b3;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+@media (max-width: 768px) {
+    .login-card {
+        padding: 30px 20px;
+    }
+
+    .login-tabs,
+    .tab-underline-wrapper {
+        gap: 40px;
+    }
+
+    .login-button {
+        width: 100%;
+    }
+}
+/* LOGO */
+.header {
+    width: 100%;
+    padding: 20px 0 10px;          
+    text-align: center;
+}
+
+.logo {
+    width: 140px;
+    display: block;
+    margin: 0 auto;
+}
